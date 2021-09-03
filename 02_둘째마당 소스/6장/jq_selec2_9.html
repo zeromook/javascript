@@ -12,16 +12,18 @@
 			"name":"정부장", 
 			"area":"서울"
 		}
-		
-		var idxNum = $.inArray("부산", arr1);
+		var idxNum = $.inArray("부산", arr1);//(데이터,배열)
+		//부산데이터가 arr1에 몇번인덱스에 있는지
 		console.log(idxNum);
 
 		var okArray1 = $.isArray(arr1);
+		//isArray는 arr1이 배열객체면 참 아니면 거짓을 반환
 		var okArray2 = $.isArray(obj);
-		console.log(okArray1);
-		console.log(okArray2);
+		//obj가 배열객체면 참 아니면 거짓을 반환
+		console.log(okArray1);//배열객체면 참
+		console.log(okArray2);//배열객체가 아니면 거짓
 
-		$.merge(arr2, arr1);
+		$.merge(arr2, arr1);//2개 배열을 하나의 배열로 만들기
 		console.log(arr2);
 	});
 </script>

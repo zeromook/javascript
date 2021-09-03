@@ -13,17 +13,19 @@
 		];
 
 		$(obj).each(function(i, o){
-				console.log(i + ":", o);
+		//obj배열의 데이터 개수만큼 함수 실행하기
+				console.log(i + " : ", o);
 		});
 		console.log("==== The End 1 ====");
 
 		$.each($("#menu2 li"), function(i, o){
-				console.log(i + ":", o);
+		//obj배열의 데이터 개수만큼 함수 실행하기
+				console.log(i + " : ", o);
 		});
 		console.log("==== The End 2 ====");    
 
 		$.each($("#menu2 li"), function(i){
-				console.log(i + ":", $(this));
+				console.log(i + " : ", $(this));
 		});    
 	});
 </script>

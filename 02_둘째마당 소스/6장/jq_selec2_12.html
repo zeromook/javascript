@@ -7,18 +7,25 @@
 <script>
 	$(function(){
 		$("#wrap p:hidden").css({
+		//숨겨진 상태의 요소만 선택
+		//p:visible으로 하면 보이는 요소만 선택
 				"display":"block",
 				"background":"#ff0"
 		});
 
 		var z1 = $("#zone1 :selected").val( );
+		//존1에서 현재 선택되어 있는 옵션 요소를 선택
 		console.log(z1);
 		
 		var z2 = $("#zone2 :checked").val( );
+		//체크박스 또는 라디오 버튼요소중 현재 선택되어
+		//있는 요소만 선택
 		console.log(z2);
 
 		var z3 = $("#zone3 :checked").val( );
 		console.log(z3);
+		//체크박스 또는 라디오 버튼요소중 현재 선택되어
+		//있는 요소만 선택
 	});
 </script>
 </head>
