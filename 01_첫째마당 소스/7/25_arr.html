@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>배열 결합 객체 생성메소드 concat</title>
+</head>
+<body>
+    <script>
+        var city01 = ["Seoul","Busan","Daejun"];
+        var city02 = ["Daugu","Gwangju","Incheon"];
+        var city03 = ["Junju","Buyue","Sejong"];
+
+
+        var data1 = city01.concat('Suwon','Osan');
+        var data2 = city01.concat(city02);
+        var data3 = city01.concat(city03,city02);
+
+        document.write("join Values1 : "+data1,"<p />");
+        document.write("join Values2 : "+data2,"<p />");
+        document.write("join Values3 : "+data3,"<p />");
+    </script>
+</body>
+</html>

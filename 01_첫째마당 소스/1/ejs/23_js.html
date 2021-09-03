@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>    
+        var subject;
+        var day = new Date().getDay();//0~6 일~토
+
+        switch(day){
+            case 1: //월
+            case 2://화
+                subject="oracle"
+                break;
+            case 3://수
+            case 4://목
+                subject="javascript"
+                break;
+            case 5:
+            case 6:
+                subject="java"
+            case 0:
+            default:
+                subject="tabletenis"
+        }
+        document.write("today <b>"+subject+"</b> study day <p />");
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>문서객체</title>
+    <script>
+        function add(){
+            var img = document.createElement("img");
+            img.src = "ball.jpg";
+            img.width = 500;
+            img.height = 500;
+            document.body.appendChild(img);
+        }
+    </script>
+</head>
+<body>
+   
+<a href="#" onclick="add()">[이미지추가하기]</a>
+</body>
+</html>

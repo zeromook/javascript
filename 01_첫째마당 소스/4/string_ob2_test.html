@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset = "UTF-8">
+<title> 문자 객체 </title>
+<script>
+
+    var username = prompt("당신의 영문이름을 적어주세요","");
+    var uppername = username.toUpperCase();
+    document.write(uppername,"<br>");
+
+    var usernum = prompt("당신의 연락처를 적어주세요","");
+    var result = usernum.substring(0,usernum.length-4)+"****";
+    document.write(result);
+</script>
+</head>
+<body>
+</body>
+</html>

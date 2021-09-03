@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>문서객체</title>
+    <script>
+        function add(){
+            var header = document.createElement("h3");//요소 노드 생성
+            var textNode = document.createTextNode("내 이름이름 내 이름이름");//텍스트 노드 생성
+            header.appendChild(textNode);//요소노드와 텍스트 노드 연결
+            document.body.appendChild(header);
+        }
+    </script>
+</head>
+<body>
+   
+<a href="#" onclick="add()">당신의 이름송을 부르세요!</a>
+</body>
+</html>

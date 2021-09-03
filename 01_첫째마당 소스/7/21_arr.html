@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arrdata = [];
+        function insertArr(){
+            var i=0;
+            for(i=0;i<=99;i++){
+                arrdata[i]= i+1;
+            }
+            selectArr();
+        }
+
+        function selectArr(){
+            var i=0;
+            for(i=0;i<arrdata.length;i++){
+                document.write(arrdata[i]," ");
+            }
+            addArr();
+        }
+        
+        function addArr(){
+            var i=0;
+            var sum = 0;
+            for(i=0;i<arrdata.length;i++){
+                sum+=arrdata[i];
+            }
+            document.write("<br>");
+            document.write("배열 데이터 덧셈 결과 : "+sum+"<br><p />");
+            document.write("<a href='21_arr.html'>돌아가기</a>");
+        }
+    </script>    
+
+    <button type="button" onclick="insertArr()">배열 생성 조회 연산</button>
+</body>
+</html>

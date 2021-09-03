@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0부터 몇개 까지 삭제하고 추가 splice</title>
+</head>
+<body>
+    <script>
+        var kdata=["서울","부산","군포","대구","대전"];
+        
+        //몇부터 몇개 까지 삭제하고 추가
+        var str1 = kdata.splice(1,2);//1부터2까지 
+
+        document.write("삭제 데이터 : "+str1+"<p />");
+        document.write("kdata 남은 배열 : "+kdata+"<p />");
+        
+        var str2 = kdata.splice(1,1,"강릉","세종");
+        //1부터1까지 삭제하고 강릉 세종추가
+
+        document.write("삭제 데이터 : "+str2+"<p />");
+        document.write("kdata 남은 배열 : "+kdata+"<p />");
+        
+        var str3 = kdata.splice(2,Number.MAX_VALUE);
+        document.write("삭제 데이터 : "+str3+"<p />");
+        document.write("kdata 남은 배열 : "+kdata+"<p />");
+
+    </script>    
+</body>
+</html>

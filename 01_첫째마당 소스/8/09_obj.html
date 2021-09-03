@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p>[Car1]</p>
+    <p id="data10"></p>
+    <p id="data20"></p>
+    <p id="data30"></p>    
+    
+    
+    <p>[Car2]</p>
+    <p id="data11"></p>
+    <p id="data21"></p>
+    <p id="data31"></p> 
+    
+    <p>[Car3]</p>
+    <p id="data12"></p>
+    <p id="data22"></p>
+    <p id="data32"></p> 
+    
+    <script>
+        var car = [
+            {name:"sonata",color:"blue",speed:100},
+            {name:"jeep",color:"red",speed:700},
+            {name:"passt",color:"white",speed:150}
+        ]
+
+        for(var i=0;i<3;i++){
+            var cname = document.getElementById("data1"+i);
+            cname.textContent = "자동차이름 : "+car[i].name;
+            
+            var ccolor = document.getElementById("data2"+i);
+            ccolor.textContent = "자동차색상 : "+car[i].color;
+
+            var cspeed = document.getElementById("data3"+i);
+            cspeed.textContent = "자동차 스피드 : "+car[i].speed;
+        }
+    </script>
+    
+
+
+
+
+
+
+</body>
+</html>

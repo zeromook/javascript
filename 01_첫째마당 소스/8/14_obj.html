@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>디지털 시계 만들기</title>
+</head>
+<body>
+    <div id="digClock">day</div>
+
+    <script>
+
+        function dloclock(){
+            var today = new Date();
+
+            var day = today.getMonth()+1+"월"+today.getDate()+"일";
+
+            var time = today.getHours()+"시"+today.getMinutes()+"분"+today.getSeconds()+"초";
+        
+            // document.getElementById("digClock").innerHTML=day+time;
+            setTimeout("dloclock()",1000);
+        
+        }
+        dloclock();
+
+
+    </script>
+</body>
+</html>

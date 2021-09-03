@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset = "UTF-8">
+<title> 배열객체 </title>
+<script>
+		var arr_1 = ["사당", "교대", "방배", "강남"];
+		var arr_2 = ["신사", "압구정", "옥수"];
+
+		var result = arr_1.join("------");//배열내의 값들을 하나의 문자열로 합쳐버림 그리고 그 구분을 ()안에 적어줌
+		document.write(result,"<br>");
+
+		document.write("<br>");
+
+
+		result = arr_1.concat(arr_2);//두개의 배열을 하나로 합쳐버림
+		for(i in result){
+			document.write(result[i],"<br>");
+		}
+		document.write("<br>");
+		
+
+		result = arr_1.slice(1,3);//배열의 값중 인덱스 1번부터 3번이전까지의 값을 제외한 나머지를 잘라버림
+		document.write(result,"<br>");
+
+		document.write("<br>");
+
+		result = arr_1.sort();//배열의 값들을 오름차순으로 재정렬해줌
+		document.write(result,"<br>");
+
+		document.write("<br>");
+
+		result = arr_1.reverse();//배열의 값들을 반대로 정렬해줌
+		document.write(result,"<br>");
+
+		document.write("<br>");
+
+</script>
+</head>
+<body>
+</body>
+</html>

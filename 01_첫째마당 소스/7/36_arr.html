@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>indexof 처음부터 lastindexof 마지막부터</title>
+</head>
+<body>
+    <script>
+        //배열의 데이터를 함수의 인자로 전달하고
+        //수행결과를 반환 받아서 새로운 배열 생성
+        var data = [10,20,30,40,30,60,70,30,90,100];
+
+        document.write("배열데이터 : ["+data+"]"+"<p />");
+        document.write("처음 찾은 30 데이터 : ["+data.indexOf(30)+"]"+"<p />");
+        document.write("마지막부터 찾은 30 데이터 : ["+data.lastIndexOf(30)+"]"+"<p />");
+        document.write("세번째부터 찾은 30 데이터 : ["+data.indexOf(30,3)+"]"+"<p />");
+        document.write("처음 찾은 300 데이터 : ["+data.indexOf(300)+"]"+"<p />");//없으면 무조건 -1이 나옴 정해져 있는값임
+    </script>
+</body>
+</html>

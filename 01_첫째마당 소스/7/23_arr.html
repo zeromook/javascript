@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arrdata = [];
+        function insertArr(){
+            var i=0;
+            for(i=0;i<=99;i++){
+                arrdata[i]= i+1;//1부터 100
+                document.write(arrdata[i]+" ");
+            }
+            document.write("<p>배열크기 : "+arrdata[i].length+"</p>");
+        }
+
+        function deldataArr(){
+            var i=0;
+            for(i=0;i<arrdata.length;i++){
+                    arrdata[i] = 0;//배열데이터를 모두 0으로 초기화
+                
+            }
+            selectArr();
+        }
+
+        function alldelArr(){
+            arrdata.length = 0;//배열 초기화
+            selectArr();
+        }
+
+        function selectArr(){
+            var i=0;
+            for(i=0;i<arrdata.length;i++){
+                document.write(arrdata[i]," ");//배열 데이터 조회
+            }
+            document.write("<p>배열 크기"+arrdata.length+"<p>");
+            document.write("<a href='23_arr.html'>돌아가기</a>")
+            }
+        
+            insertArr();//배열 데이터 생성 함수 호출
+    </script>    
+
+    <button type="button" onclick="deldataArr()">배열의 0 데이터 초기화</button>
+    <button type="button" onclick="alldelArr()">배열의 데이터 삭제</button>
+</body>
+</html>

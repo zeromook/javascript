@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>메소드를 호출하여 연산 결과 출력하기</title>
+</head>
+
+<body>
+    <p id="carname"></p>
+    <p id="carcolor"></p>
+    <p id="carspeed"></p>
+    <script>
+        var car = {
+            name: 'sonata',
+            speed: 50,
+            color: 'white',
+            start: function () {
+                return this.speed + 10;
+            }
+        };
+
+        var cname = document.getElementById("carname");
+        cname.textContent = car.name;
+        var colname = document.getElementById("carcolor");
+        colname.textContent = car.color;
+        var cspeed = document.getElementById('carspeed');
+        cspeed.textContent = car.start();
+
+    </script>
+</body>
+
+</html>

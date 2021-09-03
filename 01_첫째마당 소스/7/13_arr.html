@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var city=["Seoul", ,"Busan", ,"Incheon"];//배열 변수 선언//
+        //공백값은 인덱스자리에 들어가고 undefined로 나옴
+
+        function printArr(){
+            var i=0;
+            for(i=0;i<city.length;i++){
+                document.write("배열데이터["+i+"] = "+city[i]+"<br>");
+            }
+        }
+
+        printArr();
+    </script>    
+</body>
+</html>

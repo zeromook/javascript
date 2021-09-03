@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">>
+    <title>전역변수 지역변수 이해하기</title>
+</head>
+<body>
+    <script>
+       
+        function getgrade(){//함수정의
+            var kor=95;//자동 전역변수
+            return kor;
+        }
+        
+        var getkor = getgrade();//함수호출
+        
+        
+
+        document.write("국어점수 : "+getkor+"<br>");
+
+
+
+    </script>
+</body>
+</html>

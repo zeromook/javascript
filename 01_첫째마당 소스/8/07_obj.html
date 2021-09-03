@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>메소드를 호출하여 연산 결과 출력하기</title>
+</head>
+
+<body>
+    <p>[Hong's car]</p>
+    <p id="carname"></p>
+    <p id="carcolor"></p>
+    <p id="carspeed"></p>
+    
+    
+    <p>[Kim's car]</p>
+    <p id="carname2"></p>
+    <p id="carcolor2"></p>
+    <p id="carspeed2"></p>
+   
+   
+   <script>
+        function Car(name,color,speed){
+            this.name = name;
+            this.color = color;
+            this.speed = speed;
+            this.speedup = function(){
+                return this.speed+10;
+            }
+            this.speeddown = function(){
+                return this.speed-10;
+            }
+        };
+
+        var Hongcar = new Car("sonata","blue",100);
+        var Kimcar = new Car("avante","white",100);
+
+    
+        var cname = document.getElementById("carname");
+        cname.textContent = "자동차 이름 : "+Hongcar.name;
+        var colname = document.getElementById("carcolor");
+        colname.textContent = "자동차 색상 : "+Hongcar.color;
+        var cspeed = document.getElementById("carspeed");
+        cspeed.textContent = "자동차 속도증가 : "+Hongcar.speedup();
+        
+        
+            var cname = document.getElementById("carname2");
+            cname.textContent = "자동차 이름 : "+Kimcar.name;
+            var colname = document.getElementById("carcolor2");
+            colname.textContent = "자동차 색상 : "+Kimcar.color;
+            var cspeed = document.getElementById("carspeed2");
+            cspeed.textContent = "자동차 속도감소 : "+Kimcar.speeddown();
+    </script>
+</body>
+
+</html>

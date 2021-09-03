@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date 객체 활용하기</title>
+</head>
+<body>
+    <p id="d1"></p>
+    <p id="d2"></p>
+    <p id="d3"></p>
+    <p id="d4"></p>
+
+
+    <script>
+
+        // document.getElementById("d1").innerHTML = new Date();
+        
+        // document.getElementById("d2").innerHTML = new Date(1491803527400);//1970.01.01 이후의 밀리초
+        
+        // document.getElementById("d3").innerHTML = new Date("October 15,2018 06:08:07");
+        
+        // document.getElementById("d4").innerHTML = new Date(2018,11,25,18,30,29);
+
+        var today = new Date();
+
+        document.getElementById("d1").innerHTML = today.getFullYear()+"년";
+        document.getElementById("d2").innerHTML = today.getMonth()+1+"월"+today.getDate()+"일";
+        document.getElementById("d3").innerHTML = today.getHours()+"시"+today.getMinutes()+"분"+today.getSeconds()+"초";
+
+    </script>
+
+
+
+
+</body>
+</html>

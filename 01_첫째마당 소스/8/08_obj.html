@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>메소드를 호출하여 연산 결과 출력하기</title>
+</head>
+
+<body>
+    <p>[Hong's car]</p>
+    <p id="hong1"></p>
+    <p id="hong2"></p>
+    <p id="hong3"></p>
+    
+    
+    <p>[Kim's car]</p>
+    <p id="data1"></p>
+    <p id="data2"></p>
+    <p id="data3"></p>
+    <p id="data4"></p>
+   
+   
+   <script>
+        function Car(name,color,speed){
+            this.name = name;
+            this.color = color;
+            this.speed = speed;
+            this.speedup = function(){
+                return this.speed+10;
+            }
+            this.speeddown = function(){
+                return this.speed-10;
+            }
+        };
+
+        var Hongcar = new Car("sonata","blue",100);
+        var Kimcar = new Car("avante","white",100);
+        Kimcar.price = "3000만원";
+        delete Kimcar.color;
+
+    
+        var cname = document.getElementById("hong1");
+        cname.textContent = "자동차 이름 : "+Hongcar.name;
+        var colname = document.getElementById("hong2");
+        colname.textContent = "자동차 색상 : "+Hongcar.color;
+        var cspeed = document.getElementById("hong3");
+        cspeed.textContent = "자동차 속도증가 : "+Hongcar.speedup();
+        
+        
+            var cname = document.getElementById("data1");
+            cname.textContent = "자동차 이름 : "+Kimcar.name;
+            var colname = document.getElementById("data2");
+            colname.textContent = "자동차 색상 : "+Kimcar.color;//delete로 삭제하였기떄문에 undefined로 나옴
+            var cspeed = document.getElementById("data3");
+            cspeed.textContent = "자동차 속도감소 : "+Kimcar.speeddown();
+            var cspeed = document.getElementById("data4");
+            cspeed.textContent = "자동차 가격 : "+Kimcar.price;
+    </script>
+</body>
+
+</html>

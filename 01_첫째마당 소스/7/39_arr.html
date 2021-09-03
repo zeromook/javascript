@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr0=[10,20,30,40,50];
+        var arr1=[11,21,31,41,51];
+        var arr2=[12,22,32,42,52];
+        var arr3=[13,23,33,43,53];
+
+        var allarr = [arr0,arr1,arr2,arr3];//2차원 배열 생성
+        var partarr = [arr1,arr3];//2차원 배열 생성
+
+        function printall(){
+            for(var x=0;x<allarr.length;x++){//4개의 행
+                for(var y=0;y<allarr[x].length;y++){//5개의 행
+                    document.write(allarr[x][y]+" ");
+                }
+                document.write("<p />");
+            }
+            document.write("<a href='39_arr.html'>돌아가기</a>");
+        }
+
+        function printpart(){
+            for(var x=0;x<partarr.length;x++){//2개의 행
+                for(var y=0;y<partarr[x].length;y++){//5개의 열
+                    document.write(partarr[x][y]+" ");
+                }
+                document.write("<p />");
+            }
+            document.write("<a href='39_arr.html'>돌아가기</a>");
+        }
+    </script>    
+    <button type="button" onclick="printall()">전체배열보기</button>
+    <button type="button" onclick="printpart()">홀수배열보기</button>
+
+</body>
+</html>

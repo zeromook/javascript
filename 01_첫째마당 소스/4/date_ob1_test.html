@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset = "UTF-8">
+	<title> 날짜 정보 객체 </title>
+	<script>
+		var today = new Date();//오늘의 날짜값을 대입
+		var month = today.getMonth();
+		var date = today.getDate();
+		var day = today.getDay();//이렇게 각자에 맞게 월 일 요일을 가져옴
+
+		document.write("<h1>오늘 날짜 정보</h1>");
+		document.write("현재 월 - "+(month+1),"<br>");//월(month)은 0부터 시작되기때문에 실제값은 +1을 해줘야함
+		document.write("현재 일 - "+date,"<br>");
+		document.write("현재 요일 - "+day,"<br>");//0~6까지 일~토로 표현됨
+
+		var birthday = new Date(1998,10,01);
+		var bmonth = birthday.getMonth();
+		var bdate = birthday.getDate();
+		var bday = birthday.getDay();
+
+		document.write("<h1>내 생일 정보</h1>");
+		document.write("내생일 월 - "+(bmonth),"<br>");//여기서는 date값에 수를 지정해주었기 떄문에 +1을 안해주어도 됨
+		document.write("내 생일 - "+bdate,"<br>");
+		document.write("내 생일 요일 - "+bday,"<br>");
+	</script>
+</head>
+<body>
+</body>
+</html>

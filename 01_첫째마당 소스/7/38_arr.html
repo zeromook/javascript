@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2차원 배열</title>
+</head>
+<body>
+    <script>
+    var d2data = [[10,20,30,40,0],[60,70,80,90,0]];
+    d2data[0][4] = 50;
+    d2data[1][4] = 100;
+
+    document.write("0행0열 데이터 : "+d2data[0][0]+"<br>")
+    document.write("0행4열 데이터 : "+d2data[0][4]+"<br>")
+    document.write("1행4열 데이터 : "+d2data[1][4]+"<br>")
+
+    document.write("2차원 배열 행 길이 : "+d2data.length+"<br>")
+    document.write("2차원 배열 열 길이 : "+d2data[0].length+"<br>")
+    </script>
+</body>
+</html>

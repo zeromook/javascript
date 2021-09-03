@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>map</title>
+</head>
+<body>
+    <script>
+        //배열의 데이터를 함수의 인자로 전달하고
+        //수행결과를 반환 받아서 새로운 배열 생성
+        var data = [21,42,33,14,25,12,37,28,16,11];
+
+        function filterarr(value){
+            return value >=19;
+        }
+
+        var fdata = data.filter(filterarr);
+        document.write("원래 배열 : "+data+"<p />");
+        document.write("필터 후 배열 : "+fdata+"<p />");
+    </script>
+</body>
+</html>

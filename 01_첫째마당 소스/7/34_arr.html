@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>map</title>
+</head>
+<body>
+    <script>
+        //배열의 데이터를 함수의 인자로 전달하고
+        //수행결과를 반환 받아서 새로운 배열 생성
+        var data = [1,2,3,4,5,6,7,8,9,10];
+
+        function maparr(value){
+            return value*value;
+        }
+        var mapdata = data.map(maparr);
+        document.write("원래 배열 : "+data+"<p />");
+        document.write("바뀐 배열 : "+mapdata+"<p />");
+    </script>
+</body>
+</html>

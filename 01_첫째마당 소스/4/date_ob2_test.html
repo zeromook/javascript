@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset = "UTF-8">
+<title> 날짜 정보 객체 </title>
+<script>
+
+var today = new Date();
+var nowyear = today.getFullYear();
+
+var thedate = new Date(nowyear,11,31);//올해 연말에 대한 날짜 정보를 생성
+var diffdate = thedate.getTime()-today.getTime();//getTime은 밀리초단위로 가져오는것
+//1초는 1000msc 1분은 1000*60 1시간은 1000*60*60 1일은 1000*60*60*24
+
+var result = Math.ceil(diffdate / (1000*60*60*24));//ceil은 소수점 첫째자리에서 무조건 올림하여 정수를 반환
+
+	document.write("올해부터 연말까지는 <br> D-day: " + result + "일 남았습니다.");
+</script>
+</head>
+<body>
+</body>
+</html>
