@@ -5,35 +5,25 @@
 <title> 선택자 </title>  
 <script src="js/jquery.js"></script>
 <script>
-	$(function(){
-		var obj = [
-			{"area":"서울"},
-			{"area":"부산"},
-			{"area":"전주"}
-		];
+$(function(){
+	var obj = [
+		{"area":"서울"},
+		{"area":"부산"},
+		{"area":"전주"}
+	];
 
-		$(obj).each(function(i, o){
-			document.write(i+" "+o+"<p />");
-		});
-		document.write("==== The End 1 ===="+"<p />");
+	console.log("==== The End 1 ====");
+	console.log("==== The End 2 ====");
 
-		$.each($("#menu2 li"), function(i, o){
-			document.write(i+" : "+o+"<p />");
-		});
-		document.write("==== The End 2 ===="+"<p />");    
-
-		$.each($("#menu2 li"), function(i){
-				document.write(i + ":", $(this)+"<p />");
-		});    
-	});
+});
 </script>
 </head>
 <body>
 	<h1>탐색 선택자</h1>
 	<ul id="menu1">
-		<li>내용1-1</li>
-		<li>내용1-2</li>
-		<li>내용1-3</li>
+			<li>내용1-1</li>
+			<li>내용1-2</li>
+			<li>내용1-3</li>
 	</ul>
 	<ul id="menu2">
 		<li>내용2-1</li>

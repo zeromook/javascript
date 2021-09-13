@@ -7,6 +7,8 @@
 <script>
 	$(function(){
 		var idxNum = $("li").index($("#list3"));
+		//index는 아이디가 list3인 요소가 몇번인덱스에 있는지
+		//인덱스번호를 반환함 2반환
 		console.log(idxNum);
 	});
 </script>
@@ -14,9 +16,9 @@
 <body>
 	<h1>배열 관련 메서드</h1>
 	<ul>
-		<li>내용1</li>
-		<li>내용2</li>
-		<li id="list3">내용3</li>
+		<li>내용1</li>//0
+		<li>내용2</li>//1
+		<li id="list3">내용3</li>//2
 		<li>내용4</li>
 	</ul>
 </body>

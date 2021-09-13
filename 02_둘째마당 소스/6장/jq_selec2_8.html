@@ -22,7 +22,7 @@
 
 		var arr2 = $.map(arr1, function(a, b){
 			if(a.area == "서울") {
-				return a;
+				return a;//데이터를 반환
 			}
 		});
 		console.log(arr2);
@@ -33,7 +33,7 @@
 				return true;
 			} else {
 				return false;
-			}
+			}//반환데이터가 참이면 데이터를 반환
 		});
 		console.log(arr3);
 		console.log("==== Second End ====");    

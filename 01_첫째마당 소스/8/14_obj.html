@@ -5,7 +5,7 @@
     <title>디지털 시계 만들기</title>
 </head>
 <body>
-    <div id="digClock">day</div>
+    <div id="digClock"></div>
 
     <script>
 
@@ -16,7 +16,7 @@
 
             var time = today.getHours()+"시"+today.getMinutes()+"분"+today.getSeconds()+"초";
         
-            // document.getElementById("digClock").innerHTML=day+time;
+            document.getElementById("digClock").innerHTML=day+time;
             setTimeout("dloclock()",1000);
         
         }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Plugin Test</title>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <style>
+        *{margin: 0; padding: 0;}
+        #gallery_wrap{
+            margin: 0 auto;
+            width: 640px;
+        }
+    </style>
+    <script>
+      $(function() {
+	$('.slide_gallery').bxSlider({
+		auto: true,
+		autoControls: true,
+		stopAutoOnClick: true,
+		pager: true
+	});
+});
+    </script>
+
+
+
+</head>
+<body>
+    <div id="gallery_wrap">
+        <ul class="slide_gallery">
+            <li><img src="images/pic_1.jpg"></li>
+            <li><img src="images/pic_2.jpg"></li>
+            <li><img src="images/pic_3.jpg"></li>
+            <li><img src="images/pic_4.jpg"></li>
+            <li><img src="images/pic_5.jpg"></li>
+            <li><img src="images/pic_6.jpg"></li>
+            <li><img src="images/pic_7.jpg"></li>
+            <li><img src="images/pic_8.jpg"></li>
+        </ul>
+    </div>
+</body>
+</html>

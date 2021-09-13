@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $("document").ready(function(){
+           $(".hide").click(function(){
+               $("img").hide();
+           });
+           $(".show").click(function(){
+               $("img").show();
+           });
+           $(".toggle").click(function(){
+               $("img").toggle();
+           });
+        });
+    </script>
+</head>
+
+<body>
+
+        <button class="hide">hide</button>
+        <button class="show">show</button>
+        <button class="toggle">toggle</button>
+        <P></P>
+        <img name="pic1" src="pic1.jpg" width="130" height="100" style="position:relative">
+
+</body>
+</html>

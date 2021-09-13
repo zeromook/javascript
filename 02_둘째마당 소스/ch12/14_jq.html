@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $("document").ready(function(){
+           $(".out").click(function(){
+               $("img").fadeOut("slow");
+           });
+           $(".in").click(function(){
+               $("img").fadeIn("fast");
+           });
+           $(".toggle").click(function(){
+               $("img").fadeToggle("slow");
+           });
+           $(".to50").click(function(){
+               $("img").fadeTo("slow",0.5)
+           });
+           $(".to10").click(function(){
+               $("img").fadeTo("slow",0.1);
+           });
+           $(".to100").click(function(){
+               $("img").fadeTo("slow",1.0);
+           });
+        });
+    </script>
+</head>
+
+<body>
+
+        <button class="out">fadeout</button>
+        <button class="in">show</button>
+        <button class="toggle">fateToggle</button>
+        <button class="to50">opacity 50%</button>
+        <button class="to10">opacity 90%</button>
+        <button class="to100">opacity 0%</button>
+        <P></P>
+        <img name="pic1" src="pic1.jpg" width="130" height="100" style="position:relative">
+
+</body>
+</html>

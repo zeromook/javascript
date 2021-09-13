@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $("document").ready(function(){
+           $("button.b1").click(function(){
+               $("img").animate({
+                   width:"100px"
+               });
+           });
+           $("button.b2").click(function(){
+               $("img").animate({
+                   width:"200px"
+               });
+           });
+           $("button.b3").click(function(){
+               $("img").animate({
+                   width:"300px"
+               });
+           });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="css_pic">
+        <P>버튼을 누르면 그림의 크기가 바뀝니다.</P>
+        <br>
+        <button class="b1">가로 100픽셀</button>
+        <button class="b2">가로 200픽셀</button>
+        <button class="b3">가로 300픽셀</button>
+        <br><br><br>
+        <img name="pic1" src="pic1.jpg" >
+    </div>
+</body>
+</html>

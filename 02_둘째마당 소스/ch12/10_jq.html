@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            var xwidth = 100;
+            var yheight = 100;
+             $("div").click(function(){
+                $(this).width(xwidth).addClass("box");
+                $(this).height(yheight).addClass("box");
+                xwidth=xwidth-10;
+                yheight-=10;
+            });
+        });
+        
+    </script>
+    <style>
+        div{
+            width:100px;
+            height:100px;
+            float:left;
+            margin:7px;
+            background:yellowgreen;
+        }
+        .box{
+            background:red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>박스1</div>
+    <div>박스2</div>
+    <div>박스3</div>
+    <div>박스4</div>
+    <div>박스5</div>
+</body>
+</html>

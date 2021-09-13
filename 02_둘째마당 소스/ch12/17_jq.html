@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+       
+           function move(obj,time){
+                $(obj).stop().animate({
+                    left:-350,top:0
+                },time);
+           }
+           function back(css){
+               $(css).stop().animate({
+                   left:0,top:0
+               });
+           }
+       
+    </script>
+    <style>
+        .moving{
+            border:solid 1px #000000;
+            margin: 20px auto 0 auto;
+            text-align: right;
+            width: 500px;
+        }
+        .moving img{
+            cursor:pointer;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="init">
+        &nbsp;<button onclick="back('.moving img')">초기화 상태</button>
+    </div>
+    <div class="moving">
+        <img onclick="move(this,6000)" src="pic1.jpg">
+        <img onclick="move(this,3000)" src="pic2.jpg">
+        <img onclick="move(this,1000)" src="pic3.jpg">
+    </div>
+
+</body>
+</html>
